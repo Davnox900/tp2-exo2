@@ -18,10 +18,12 @@ input.onButtonPressed(Button.B, function () {
         }
     }
 })
+let x = 0
 let posY = 0
 let posX = 0
 posX = 2
 posY = 4
 basic.forever(function () {
     led.plot(posX, posY)
+    x = randint(0, 4)
 })
